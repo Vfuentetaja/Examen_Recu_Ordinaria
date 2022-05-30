@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<!-- elementos simles  asignatura-->
+<xs:element name="nombre" type="xs:string"/>
+
+<xs:element name="evaluacion">
+    <xs:simpleType>
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:element>
+
+<xs:element name="nota">
+    <xs:simpleType>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="suspenso"/>
+            <xs:enumeration value="suficiente"/>
+            <xs:enumeration value="notable"/>
+            <xs:enumeration value="sobresaliente"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:element>
+
+<xs:element name="telefono">
+        <xs:simpleType>
+            <xs:restriction base="xs:integer">
+                <xs:pattern value="[1-9]{9}"/>
+            </xs:restriction>
+        </xs:simpleType>
+</xs:element>
+
+<!-- elemento compuesto asignatura-->
+
+<xs:element name="asignatura" type="datos_asignatura"/>
+
+    <xs:complexType name="datos_asignatura">
+        <xs:sequence>
+            <xs:element ref="nombre"/>
+            <xs:element ref="evaluacion"/>
+            <xs:element ref="nota" minOccurs="0" maxOccurs="9"/>
+        </xs:sequence>
+    </xs:complexType>
+
+<!-- elemento compuesto alumno-->
+
+    <xs:element name="alumnos" type="datos_alumnos"/>
+
+    <xs:complexType name="datos_alumnos">
+        <xs:sequence>
+            <xs:element ref="nombre" minOccurs="1"/>
+            <xs:element ref="telefono"/>
+            <xs:element ref="asignatura"/>
+        </xs:sequence>
+    </xs:complexType>
+
+<!-- elemento compuesto grupo-->
+    <xs:element name="grupo" type="datos_grupo"/> 
+
+    
+    <xs:complexType name="datos_grupo">     
+        <xs:sequence>
+            <xs:element ref="nombre"/>
+            <xs:element ref="alumnos" minOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+
+<!-- elemento compuesto nivel educativo-->
+
+    <xs:element name="nivel_educativo" type="datos_nivel_educativo"/> 
+
+
+
+    <xs:complexType name="datos_nivel_educativo">   
+        <xs:sequence>
+            <xs:element ref="nombre"/>
+            <xs:element ref="grupo" minOccurs="0" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+</xs:schema>

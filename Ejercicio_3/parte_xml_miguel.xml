@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nivel_educativo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Untitled-2.xsd">
+    <nombre>Bachillerato</nombre>
+    <grupo>
+        <nombre>2ºA</nombre>
+        <alumnos>
+            <nombre>Marcos</nombre>
+            <telefono>684375976</telefono>
+            <asignatura>
+                <nombre>Entornos</nombre>
+                <evaluacion>1</evaluacion>
+                <nota>notable</nota>
+                <nota>suficiente</nota>
+            </asignatura>
+        </alumnos>
+    </grupo>
+</nivel_educativo>

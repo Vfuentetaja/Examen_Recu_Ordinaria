@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nivel_educativo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Untitled-2.xsd">
+    <nombre>Bachillerato</nombre>
+    <grupo>
+        <nombre>2A</nombre>
+        <alumnos>
+            <nombre></nombre>
+            <telefono></telefono>
+            <asignatura>
+                <nombre></nombre>
+                <evaluacion></evaluacion>
+                <nota></nota>
+            </asignatura>
+        </alumnos>
+    </grupo>
+</nivel_educativo>
