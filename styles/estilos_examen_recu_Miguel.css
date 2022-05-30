@@ -1,0 +1,130 @@
+#colum_1{
+    position: absolute;
+    width: 20%;
+    height: 95%;
+    margin-top: 1%;
+    margin-left: 0%;
+}
+#colum_2{
+    position: absolute;
+    width: 78%;
+    height: 95%;
+    margin-left: 21%;
+    margin-top: 1%;
+    margin-right: 21%;
+}
+#contc li{
+    list-style: none;
+}
+#contc{
+    background-color: orange;
+    color: white;
+    text-align: center;
+}
+#idiomas{
+    background-color: black;
+    width: 100%;
+    height: 45%;
+    color: white;
+    text-align: center;
+}
+#formulario{
+    background-color: gray;
+    text-align: center;
+}
+#button{
+    border-radius: 5px;
+    width: 90%;
+}
+#area{
+    border-radius: 5px;
+    width: 90%;
+}
+#salario{
+    border-radius: 5px;
+    width: 44%;
+}
+#gmail{
+    border-radius: 5px;
+    width: 44%;
+}
+#idiomas li{
+    list-style: none;
+    text-align: center;
+}
+#formulario>H1{
+    color: white;
+    text-align: left;
+}
+#RM>p{
+    text-align: center;
+}
+#RM>h1{
+    text-align: center;
+}
+#RM>img{
+    position: absolute;
+}
+#CR>p{
+    text-align: center;
+}
+#CR>h1{
+    text-align: center;
+}
+#CR>img{
+    position: absolute;
+}
+#titulo{
+    margin-left: 2%;
+    width: 100%;
+    height: 20%;
+    margin-top: 0%;
+    background-color: black;
+    color: white;
+}
+#skills{
+    display: flex;
+}
+#skills>h6{
+    background-color: orange;
+    border-radius: 5px;
+    color: white;
+    width: 10%;
+    height: 2%;
+}
+/* para Tablet horizontal o Vertical escritorio*/
+@media only screen and (min-width:481px) and (max-width:768px) and (orientation: landscape), only screen and (min-width:769px) and (orientation: portrait) {
+    #colum_1{
+        position: absolute;
+        width: 20%;
+        height: 95%;
+        margin-top: 1%;
+        margin-left: 0%;
+    }
+    #colum_2{
+        position: absolute;
+        width: 78%;
+        height: 95%;
+        margin-left: 21%;
+        margin-top: 1%;
+        margin-right: 21%;
+    }
+
+}
+/* para Móvil */
+@media only screen and (max-width:600px){
+    #colum_1{
+        position: absolute;
+        width: 90%;
+        height: 20%;
+        margin-top: 1%;
+        margin-left: 0%;
+    }
+    #colum_2{
+        position: absolute;
+        width: 90%;
+        height: 45%;
+        margin-left: 0%;
+        margin-top: 80%;
+    }
+}
